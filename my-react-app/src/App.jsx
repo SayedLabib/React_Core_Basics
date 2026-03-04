@@ -4,32 +4,53 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
+ 
       <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Person></Person>
+      <Device name="iPhone" type="Smartphone"></Device>
+
     </>
   )
 }
+
+
+function Device(props){
+ 
+   const style = { color: "red", fontSize: "20px", fontWeight: "bold",
+
+      margin: "10px", border: "2px solid orange", borderRadius: "8px"                
+   };
+
+  return(
+   
+   <div style={style}>
+          <h3>Hi This is a Device</h3>
+          <h3>Name of the device is - {props.name}</h3>
+          <h3>Type of the device is - {props.type}</h3>
+ 
+
+    </div>
+
+  )
+
+}
+
+function Person(){
+
+  const name = { name: "Fuad", age: 22, job: "AI Engineer"  };
+  
+  return(
+
+    <h3>HI This is {name.name} an {name.job}</h3>
+  );
+}
+
+
+
+
 
 export default App
