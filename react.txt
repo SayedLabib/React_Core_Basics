@@ -1,1 +1,9 @@
 I am gonna continue after from 12:00 AM
+
+We are learning props to give a dynamic feel to the react.
+
+Props are basically a way to pass the properties of a component to another component.
+
+React a is a one way pass porperties that means we can pass the properties of the parent
+to the child but can't pass the properties of the child to the parent. That means
+one directional not Bi directional
