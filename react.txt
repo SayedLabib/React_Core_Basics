@@ -7,3 +7,5 @@ Props are basically a way to pass the properties of a component to another compo
 React a is a one way pass porperties that means we can pass the properties of the parent
 to the child but can't pass the properties of the child to the parent. That means
 one directional not Bi directional
+
+I will start from tomorrow. Today, I am a little bit tired of roaming in the market.
