@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Todo from './Todo'
 
 function App() {
  
@@ -10,8 +11,12 @@ function App() {
     <>
  
       <h1>Vite + React</h1>
-      <Person></Person>
-      <Device name="iPhone" type="Smartphone"></Device>
+      {/* <Person></Person>
+      <Device name="iPhone" type="Smartphone"></Device> */}
+
+      <Todo task="Learn React" isDone={true}></Todo>
+      <Todo task="Finish Project" isDone={false}></Todo>
+      <Todo task="Learn JavaScript" isDone={true}></Todo>
 
     </>
   )
