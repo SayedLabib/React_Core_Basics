@@ -13,6 +13,10 @@ It's pretty just like JS we will create another file and the function will be th
 in the file. But we need to add an export default function and import it in the main
 App.jsx file to access that component.
 
+There are 6 different ways of conditional Rendering ---->
+
+
+
 
 
 
