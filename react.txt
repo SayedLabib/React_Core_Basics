@@ -20,7 +20,17 @@ Now started with the rendering list of users using map.
 
 
 ## Today We will start from React Core concepts part two. We will clear more
-about react core concepts and will try to be more close relationship weith react
+about react core concepts and will try to be more close relationship with react
+
+    *** Event handler in React --->
+       There are multiple ways of handling event in react. We will see couple of event handler
+       moments in react
+
+       Learned about multiple way of handling events
+    
+    *** State Change in React --->
+    
+     
 
 
 
