@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
+import Counter from './Counter'
 
 function App() {
 
@@ -18,6 +18,9 @@ const handleClick3 = (num) => {
       <h3 style={{ 
         color: 'LightSeaGreen',
        }}>React Core Concepts Part 2</h3>
+
+       <Counter>  </Counter>
+
 
        <button onClick={handleClick} style={{
         background:'Lightblue',

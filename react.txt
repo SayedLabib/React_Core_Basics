@@ -29,7 +29,12 @@ about react core concepts and will try to be more close relationship with react
        Learned about multiple way of handling events
     
     *** State Change in React --->
-    
+      In a dynamic website many informations can be changed. Like cart product count Then, product name
+      and many other things. So, that scenario is called State. So, If a scenerio comes where information
+      can be changed, React given a special fuction to use the State which is known as useState() function.
+
+      So we have learned how to manage a state management in React
+
      
 
 
