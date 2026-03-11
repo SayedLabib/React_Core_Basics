@@ -14,6 +14,9 @@ in the file. But we need to add an export default function and import it in the 
 App.jsx file to access that component.
 
 There are 6 different ways of conditional Rendering ---->
+we will learn through out the porject Insha Allah...Fi-Amanillah
+
+
 
 
 
