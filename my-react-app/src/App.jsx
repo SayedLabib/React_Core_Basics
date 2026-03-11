@@ -5,7 +5,7 @@ import './App.css'
 import Todo from './Todo'
 import Actor from './Actor'
 import ActorsInfo from './ActorsInfo'
-
+import BookStore from './BookStore'
 
 function App() {
  
@@ -25,10 +25,23 @@ function App() {
   ];
 
 
+  // Creating a array of objects to store the information of books in a bookstore
+
+  const books = [
+  
+    {title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', year: 1925},
+    {title: 'To Kill a Mockingbird', author: 'Harper Lee', year: 1960},
+    {title: '1984', author: 'George Orwell', year: 1949},
+
+  ];
+
   return (
     <>
  
       <h1>Vite + React</h1>
+      
+        <BookStore books = {books}></BookStore>
+    
 
       {
         actorsInfo.map(actor => <ActorsInfo actorsInfo={actor}></ActorsInfo>)
