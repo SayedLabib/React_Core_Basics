@@ -16,7 +16,13 @@ App.jsx file to access that component.
 There are 6 different ways of conditional Rendering ---->
 we will learn through out the porject Insha Allah...Fi-Amanillah
 
-Now started with the rendering list of users using map
+Now started with the rendering list of users using map.
+
+
+## Today We will start from React Core concepts part two. We will clear more
+about react core concepts and will try to be more close relationship weith react
+
+
 
 
 
