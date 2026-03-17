@@ -3,8 +3,12 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './Counter'
+import Users from './users'
+
 
 function App() {
+
+
 
  function handleClick() {
   alert('Button clicked!')
@@ -15,10 +19,13 @@ const handleClick3 = (num) => {
 }
   return (
     <>
+
       <h3 style={{ 
         color: 'LightSeaGreen',
        }}>React Core Concepts Part 2</h3>
+      
 
+        <Users></Users>
        <Counter>  </Counter>
 
 
