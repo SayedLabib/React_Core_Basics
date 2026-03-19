@@ -23,4 +23,5 @@ export default function Users(){
  * declare a usetate to hold the data of users
  * useEffect to fetch the data of users from an api and update the state
  * use fetch for load data
+ * display the data on the DOM
  */
