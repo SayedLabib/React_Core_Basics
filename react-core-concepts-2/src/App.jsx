@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './Counter'
 import Users from './users'
+import Friends from './Friends'
 
 
 function App() {
@@ -24,7 +25,8 @@ const handleClick3 = (num) => {
         color: 'LightSeaGreen',
        }}>React Core Concepts Part 2</h3>
       
-
+         <Friends></Friends>
+        
         <Users></Users>
        <Counter>  </Counter>
 
