@@ -35,7 +35,7 @@ about react core concepts and will try to be more close relationship with react
 
       So we have learned how to manage a state management in React
    
-## I will start the work a little bit later
+## I will start the work a little bit later. I will start after 12:00 AM
 
      
 
