@@ -6,7 +6,9 @@ export default {
   ],
 
   theme: {
-    extend: {},
+    extend: {fontFamily: {
+        'exo': ['Exo 2', 'sans-serif'],  // Add this
+      },},
   },
   plugins: [],
 }

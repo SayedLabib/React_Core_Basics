@@ -12,7 +12,7 @@ function App() {
     <>
        <Header></Header>
        
-       <div className='flex justify-normal items-center'>
+       <div className='md:flex justify-between gap-4 container mx-auto mt-10'>
         <Blogs></Blogs>
         <Bookmarks></Bookmarks>
        </div>
