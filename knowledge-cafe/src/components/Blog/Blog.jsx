@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 
-const Blog = ({blog}) => {
+const Blog = ({blog, handleAddToBookmarks}) => {
   
     const {title, cover_img, author_name, author_img, reading_time, post_date, hashtags } = blog;
    
     return (
         <div className='container mx-auto text-4xl'>
-            <img className='rounded-xl md:w-full md:h-[445px]' src={cover_img} alt={`cover picture of the title ${title}`} />
+            <img className='rounded-xl md:w-full' src={cover_img} alt={`cover picture of the title ${title}`} />
             
             <div className='mt-10 mb-14'>
                 {/* Blog meta information */}
@@ -29,7 +29,11 @@ const Blog = ({blog}) => {
 
                    <div className='flex flex-row items-center gap-3'>
                      <p className='text-xl'>{reading_time} min read</p>
-                     <img src="https://img.icons8.com/?size=24&id=p5IcHfcSGnlD&format=png&color=000000" alt="" />
+                     
+                     <button onClick={() => handleAddToBookmarks(blog)}>
+                       <img src="https://img.icons8.com/?size=24&id=p5IcHfcSGnlD&format=png&color=000000" alt="" />
+                     </button>
+                     
                    </div>
                   
                 </div>
@@ -47,7 +51,8 @@ const Blog = ({blog}) => {
 };
 
 Blog.propTypes = {
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object.isRequired,
+    handleAddToBookmarks: PropTypes.func.isRequired
 };
 
 export default Blog;
