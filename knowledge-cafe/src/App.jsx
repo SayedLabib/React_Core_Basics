@@ -9,10 +9,15 @@ import { useState } from 'react'
 function App() {
 
   const [bookmarks, setBookmarks] = useState([]);
+  const [readingTime, setReadingTime] = useState(0);
 
   const handleAddToBookmarks = blog => {
     const newbookmarks = [...bookmarks, blog];
     setBookmarks(newbookmarks);
+  }
+
+  const handleReadingTime = time => {
+    setReadingTime(readingTime + time);
   }
 
   return (
@@ -20,9 +25,9 @@ function App() {
        <Header></Header>
        
        <div className='md:flex justify-between gap-4 max-w-7xl mx-auto mt-10'>
-        <Blogs handleAddToBookmarks={handleAddToBookmarks}></Blogs>
+        <Blogs handleAddToBookmarks={handleAddToBookmarks} handleReadingTime={handleReadingTime}></Blogs>
 
-        <Bookmarks bookmarks={bookmarks}></Bookmarks>
+        <Bookmarks bookmarks={bookmarks} readingTime={readingTime}></Bookmarks>
        </div>
   
     </>

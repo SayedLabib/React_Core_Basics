@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Blog = ({blog, handleAddToBookmarks}) => {
+const Blog = ({blog, handleAddToBookmarks, handleReadingTime}) => {
   
     const {title, cover_img, author_name, author_img, reading_time, post_date, hashtags } = blog;
    
@@ -41,7 +41,9 @@ const Blog = ({blog, handleAddToBookmarks}) => {
                 {/* blog title */}
                 <h1 className='mt-5 text-3xl font-bold'>{title}</h1>
                 <h3 className='text-gray-500 text-xl mt-5'>{hashtags}</h3>
-                <p className='text-blue-700 text-xl mt-5 font-semibold'>Mark as read</p>
+                <button className='text-blue-700 text-xl mt-5 font-semibold' onClick={() => handleReadingTime(reading_time)}>
+                  Mark as read
+                </button>
                  <hr className='w-[121px] h-[2px] bg-blue-800' />
                 <hr className='mt-10' />
 
