@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Blog = ({blog, handleAddToBookmarks, handleReadingTime}) => {
   
-    const {title, cover_img, author_name, author_img, reading_time, post_date, hashtags } = blog;
+    const {id, title, cover_img, author_name, author_img, reading_time, post_date, hashtags } = blog;
    
     return (
         <div className='container mx-auto text-4xl'>
@@ -41,7 +41,7 @@ const Blog = ({blog, handleAddToBookmarks, handleReadingTime}) => {
                 {/* blog title */}
                 <h1 className='mt-5 text-3xl font-bold'>{title}</h1>
                 <h3 className='text-gray-500 text-xl mt-5'>{hashtags}</h3>
-                <button className='text-blue-700 text-xl mt-5 font-semibold' onClick={() => handleReadingTime(reading_time)}>
+                <button className='text-blue-700 text-xl mt-5 font-semibold' onClick={() => handleReadingTime(id, reading_time)}>
                   Mark as read
                 </button>
                  <hr className='w-[121px] h-[2px] bg-blue-800' />
